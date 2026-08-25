@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cale d'appui sur roue — Rexatools</title>
+<meta name="description" content="Un point d'appui stable partout : la cale qui transforme la roue en support de levier. Fabriqué en France, 120,00 €, livraison 48 h.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%2314161a%22/%3E%3Ctext x=%2216%22 y=%2223%22 font-family=%22Arial%22 font-size=%2220%22 font-weight=%22bold%22 fill=%22%23c22126%22 text-anchor=%22middle%22%3ER%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rexatools">
+<meta property="og:title" content="Cale d'appui sur roue — Rexatools">
+<meta property="og:description" content="Un point d'appui stable partout : la cale qui transforme la roue en support de levier. Fabriqué en France, 120,00 €, livraison 48 h.">
+<meta property="og:image" content="https://rexatools.com/img/logo-1769762648.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   REXATOOLS — maquette CRO façon Shopify (thème type Dawn)
+   Palette : charbon #14161A · acier #23262C · rouge atelier #C22126
+   Typo : Barlow Condensed (display) + Inter (texte)
+   Signature : "règle d'atelier" — graduations de mesure en séparateurs
+   ============================================================ */
+:root {
+  --encre: #14161a;
+  --acier: #23262c;
+  --gris: #5c626b;
+  --ligne: #e4e6ea;
+  --fond: #ffffff;
+  --fond-doux: #f5f6f8;
+  --rouge: #c22126;
+  --rouge-fonce: #9c1a1f;
+  --ok: #1f7a3d;
+  --radius: 8px;
+  --ombre: 0 10px 30px rgba(20, 22, 26, .10);
+  --transition: .22s ease;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --texte: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+body {
+  font-family: var(--texte);
+  color: var(--encre);
+  background: var(--fond);
+  line-height: 1.6;
+  font-size: 16px;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--rouge); outline-offset: 2px; }
+
+.wrap { width: min(1180px, 92%); margin-inline: auto; }
+
+/* ---------- Titres ---------- */
+h1, h2, h3, .display {
+  font-family: var(--display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  line-height: 1.08;
+}
+h1 { font-size: clamp(2.1rem, 5.5vw, 3.6rem); }
+h2 { font-size: clamp(1.6rem, 3.6vw, 2.3rem); }
+h3 { font-size: 1.15rem; }
+.eyebrow {
+  font-family: var(--display);
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: .85rem;
+  color: var(--rouge);
+  font-weight: 600;
+  display: block;
+  margin-bottom: .5rem;
+}
+
+/* ---------- Signature : règle d'atelier ---------- */
+.regle {
+  height: 14px;
+  background:
+    repeating-linear-gradient(90deg,
+      var(--ligne) 0 2px, transparent 2px 12px),
+    repeating-linear-gradient(90deg,
+      var(--rouge) 0 2px, transparent 2px 60px);
+  background-size: 100% 8px, 100% 14px;
+  background-position: bottom, bottom;
+  background-repeat: repeat-x;
+  opacity: .85;
+}
+section { padding: 3.4rem 0; }
+section.doux { background: var(--fond-doux); }
+.sec-tete { max-width: 640px; margin-bottom: 2rem; }
+.sec-tete p { color: var(--gris); }
+
+/* ---------- Boutons ---------- */
+.btn {
+  display: inline-block;
+  font-family: var(--display);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: .8rem 1.6rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--encre);
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: var(--transition);
+  background: transparent;
+  color: var(--encre);
+}
+.btn-plein { background: var(--rouge); border-color: var(--rouge); color: #fff; }
+.btn-plein:hover { background: var(--rouge-fonce); border-color: var(--rouge-fonce); }
+.btn-ligne:hover { background: var(--encre); color: #fff; }
+.btn-blanc { border-color: #fff; color: #fff; }
+.btn-blanc:hover { background: #fff; color: var(--encre); }
+.btn-large { width: 100%; padding: 1rem; font-size: 1.1rem; }
+
+/* ---------- Barre d'annonce ---------- */
+.annonce {
+  background: var(--encre);
+  color: #fff;
+  text-align: center;
+  font-size: .85rem;
+  padding: .5rem 1rem;
+}
+.annonce strong { color: #ffb3b3; }
+
+/* ---------- Header sticky ---------- */
+header.site {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: rgba(255, 255, 255, .96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--ligne);
+}
+.h-in {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: .7rem 0;
+}
+.logo { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+.logo img { height: 44px; width: auto; border-radius: 4px; }
+.logo span {
+  font-family: var(--display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+nav.principal { display: none; }
+.h-actions { margin-left: auto; display: flex; align-items: center; gap: .9rem; }
+.cart-lien { position: relative; text-decoration: none; font-size: 1.45rem; line-height: 1; background:none; border:none; cursor:pointer; }
+.cart-count {
+  position: absolute;
+  top: -7px; right: -11px;
+  background: var(--rouge);
+  color: #fff;
+  border-radius: 999px;
+  font-size: .68rem;
+  font-weight: 700;
+  min-width: 18px; height: 18px;
+  display: grid; place-items: center;
+  padding: 0 4px;
+}
+.cart-count.vide { display: none; }
+#burger {
+  background: none; border: none; cursor: pointer;
+  width: 40px; height: 40px; display: grid; place-items: center;
+}
+#burger span, #burger span::before, #burger span::after {
+  content: ""; display: block; width: 24px; height: 2.5px;
+  background: var(--encre); position: relative; transition: var(--transition);
+}
+#burger span::before { position: absolute; top: -7px; }
+#burger span::after { position: absolute; top: 7px; }
+
+/* menu mobile */
+nav.mobile {
+  position: fixed; inset: 0 30% 0 0;
+  max-width: 340px;
+  background: #fff;
+  z-index: 80;
+  transform: translateX(-105%);
+  transition: transform .28s ease;
+  padding: 1.4rem;
+  overflow-y: auto;
+}
+body.menu-ouvert nav.mobile { transform: none; }
+nav.mobile a {
+  display: block;
+  padding: .85rem 0;
+  border-bottom: 1px solid var(--ligne);
+  text-decoration: none;
+  font-family: var(--display);
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+nav.mobile .sous { font-family: var(--texte); text-transform: none; font-weight: 400; font-size: .95rem; color: var(--gris); }
+
+@media (min-width: 900px) {
+  #burger, nav.mobile { display: none; }
+  nav.principal { display: flex; gap: 1.6rem; }
+  nav.principal a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: .95rem;
+    padding: .3rem 0;
+    border-bottom: 2px solid transparent;
+  }
+  nav.principal a:hover, nav.principal a[aria-current] { border-color: var(--rouge); }
+}
+
+/* ---------- Voile ---------- */
+#voile {
+  position: fixed; inset: 0;
+  background: rgba(20, 22, 26, .5);
+  opacity: 0; pointer-events: none;
+  transition: opacity .25s ease;
+  z-index: 70;
+}
+body.drawer-ouvert #voile, body.menu-ouvert #voile { opacity: 1; pointer-events: auto; }
+body.drawer-ouvert, body.menu-ouvert { overflow: hidden; }
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(135deg, var(--encre) 0%, var(--acier) 70%);
+  color: #fff;
+  padding: 3.6rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after { /* graduations en filigrane */
+  content: "";
+  position: absolute; inset: auto 0 0 0; height: 22px;
+  background:
+    repeating-linear-gradient(90deg, rgba(255,255,255,.35) 0 2px, transparent 2px 14px),
+    repeating-linear-gradient(90deg, var(--rouge) 0 2px, transparent 2px 70px);
+  background-size: 100% 10px, 100% 22px;
+  background-position: bottom, bottom;
+  background-repeat: repeat-x;
+}
+.hero-in { display: grid; gap: 2.2rem; align-items: center; }
+.hero p.grand { font-size: 1.12rem; color: #d8dade; margin: 1rem 0 1.6rem; max-width: 540px; }
+.hero .cta { display: flex; flex-wrap: wrap; gap: .9rem; }
+.hero .micro { margin-top: 1rem; font-size: .85rem; color: #aab0b8; }
+.hero-visuel {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--ombre);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .8rem;
+}
+.hero-visuel img { border-radius: 6px; aspect-ratio: 1; object-fit: contain; background: #fff; }
+.hero-visuel figcaption {
+  grid-column: 1 / -1;
+  font-family: var(--display);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: .8rem;
+  color: var(--gris);
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .hero-in { grid-template-columns: 1.15fr .85fr; }
+}
+
+/* ---------- Réassurance ---------- */
+.reassure { border-bottom: 1px solid var(--ligne); background: #fff; }
+.reassure .wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1.2rem 0;
+}
+.reassure div { display: flex; gap: .7rem; align-items: flex-start; font-size: .88rem; }
+.reassure b { display: block; font-family: var(--display); text-transform: uppercase; letter-spacing: .05em; font-size: .95rem; }
+.reassure svg { flex: 0 0 26px; margin-top: 2px; }
+@media (min-width: 800px) { .reassure .wrap { grid-template-columns: repeat(4, 1fr); } }
+
+/* ---------- Avis / preuve ---------- */
+.avis-grille { display: grid; gap: 1.1rem; }
+@media (min-width: 800px) { .avis-grille { grid-template-columns: repeat(3, 1fr); } }
+.avis-carte {
+  background: #fff;
+  border: 1px solid var(--ligne);
+  border-radius: var(--radius);
+  padding: 1.3rem;
+}
+.etoiles { color: #e8a10c; letter-spacing: 2px; font-size: .95rem; }
+.avis-carte p { margin: .6rem 0; font-size: .95rem; }
+.avis-carte footer { font-size: .85rem; color: var(--gris); }
+.note-globale {
+  display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: baseline; margin-bottom: 1.6rem;
+}
+.note-globale strong { font-family: var(--display); font-size: 2.6rem; }
+.note-globale span { color: var(--gris); font-size: .9rem; }
+
+/* ---------- Grille catégories ---------- */
+.cat-grille { display: grid; gap: 1.2rem; }
+@media (min-width: 760px) { .cat-grille { grid-template-columns: repeat(3, 1fr); } }
+.cat-carte {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--ligne);
+  background: #fff;
+  text-decoration: none;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+.cat-carte:hover { box-shadow: var(--ombre); transform: translateY(-3px); }
+.cat-carte img { aspect-ratio: 4 / 3; object-fit: contain; padding: 1.4rem; background: #fff; }
+.cat-carte .cat-tex { padding: 1.1rem 1.3rem 1.4rem; border-top: 1px solid var(--ligne); }
+.cat-carte p { font-size: .9rem; color: var(--gris); margin-top: .3rem; }
+.cat-carte .lien { color: var(--rouge); font-weight: 600; font-size: .9rem; margin-top: .7rem; display: inline-block; }
+
+/* ---------- Cartes produit ---------- */
+.prod-grille { display: grid; gap: 1.2rem; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 900px) { .prod-grille { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 900px) { .prod-grille.trois { grid-template-columns: repeat(3, 1fr); } }
+.prod-carte {
+  background: #fff;
+  border: 1px solid var(--ligne);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  position: relative;
+}
+.prod-carte:hover { box-shadow: var(--ombre); transform: translateY(-3px); }
+.badge {
+  position: absolute; top: .7rem; left: .7rem;
+  background: var(--rouge); color: #fff;
+  font-family: var(--display); text-transform: uppercase;
+  font-size: .72rem; letter-spacing: .08em;
+  padding: .2rem .55rem; border-radius: 4px; z-index: 2;
+}
+.prod-carte a.img { display: block; }
+.prod-carte img { aspect-ratio: 1; object-fit: contain; padding: 1rem; background: #fff; }
+.prod-tex { padding: .9rem 1rem 1.1rem; display: flex; flex-direction: column; gap: .4rem; flex: 1; }
+.prod-tex h3 { font-size: 1rem; line-height: 1.25; }
+.prod-tex h3 a { text-decoration: none; }
+.prod-tex .mini { font-size: .82rem; color: var(--gris); flex: 1; }
+.prod-tex .note { font-size: .78rem; color: var(--gris); }
+.prix { font-weight: 700; font-size: 1.08rem; }
+.prod-tex .btn { padding: .55rem .8rem; font-size: .9rem; margin-top: .3rem; }
+
+/* ---------- Bénéfices ---------- */
+.benef-grille { display: grid; gap: 1.2rem; }
+@media (min-width: 800px) { .benef-grille { grid-template-columns: repeat(2, 1fr); } }
+.benef {
+  border-left: 3px solid var(--rouge);
+  padding: .2rem 0 .2rem 1.1rem;
+}
+.benef p { color: var(--gris); font-size: .95rem; margin-top: .3rem; }
+
+/* ---------- Paiement ---------- */
+.paiement-bloc {
+  background: var(--encre);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 2rem;
+  display: grid;
+  gap: 1.4rem;
+}
+@media (min-width: 860px) { .paiement-bloc { grid-template-columns: 1.2fr 1fr; align-items: center; } }
+.paiement-bloc p { color: #c8ccd2; font-size: .95rem; }
+.pay-badges { display: flex; flex-wrap: wrap; gap: .6rem; }
+.pay-badges a {
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 6px;
+  padding: .45rem .8rem;
+  font-size: .85rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: rgba(255,255,255,.06);
+}
+.pay-badges a.crypto { border-color: #f7931a; color: #ffc46b; }
+
+/* ---------- FAQ ---------- */
+.faq details {
+  border: 1px solid var(--ligne);
+  border-radius: var(--radius);
+  margin-bottom: .7rem;
+  background: #fff;
+}
+.faq summary {
+  cursor: pointer;
+  padding: 1rem 1.2rem;
+  font-weight: 600;
+  list-style: none;
+  position: relative;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 1.1rem; font-size: 1.3rem; color: var(--rouge); }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { padding: 0 1.2rem 1.1rem; color: var(--gris); font-size: .95rem; }
+
+/* ---------- Newsletter / CTA final ---------- */
+.newsletter { text-align: center; }
+.newsletter form {
+  display: flex; gap: .6rem; max-width: 480px; margin: 1.4rem auto 0; flex-wrap: wrap; justify-content: center;
+}
+.newsletter input {
+  flex: 1 1 240px;
+  padding: .85rem 1rem;
+  border: 1.5px solid var(--acier);
+  border-radius: var(--radius);
+  font: inherit;
+}
+
+/* ---------- Footer ---------- */
+footer.site {
+  background: var(--encre);
+  color: #c8ccd2;
+  padding: 3rem 0 2rem;
+  font-size: .9rem;
+}
+.f-grille { display: grid; gap: 2rem; }
+@media (min-width: 860px) { .f-grille { grid-template-columns: 1.3fr 1fr 1fr 1.2fr; } }
+footer.site h3 { color: #fff; margin-bottom: .8rem; font-size: 1rem; }
+footer.site a { color: #c8ccd2; text-decoration: none; display: block; padding: .22rem 0; }
+footer.site a:hover { color: #fff; }
+.f-bas {
+  border-top: 1px solid rgba(255,255,255,.15);
+  margin-top: 2.2rem; padding-top: 1.4rem;
+  display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between;
+  font-size: .8rem; color: #8d939c;
+}
+
+/* ---------- Fil d'ariane ---------- */
+.ariane { font-size: .84rem; color: var(--gris); padding: 1rem 0 0; }
+.ariane a { color: var(--gris); }
+.ariane strong { color: var(--encre); font-weight: 600; }
+
+/* ---------- Fiche produit ---------- */
+.fiche { display: grid; gap: 2.2rem; padding: 1.6rem 0 3rem; }
+@media (min-width: 900px) { .fiche { grid-template-columns: 1.05fr .95fr; } }
+.galerie img.principale {
+  width: 100%; aspect-ratio: 1; object-fit: contain;
+  border: 1px solid var(--ligne); border-radius: var(--radius); background: #fff; padding: 1.4rem;
+}
+.minis { display: flex; gap: .7rem; margin-top: .8rem; }
+.minis button {
+  border: 2px solid var(--ligne); border-radius: 6px; padding: 0; background: #fff; cursor: pointer; width: 78px;
+}
+.minis button.actif { border-color: var(--rouge); }
+.minis img { aspect-ratio: 1; object-fit: contain; padding: .4rem; }
+.fiche-inf .accroche { font-size: 1.08rem; color: var(--acier); margin: .8rem 0; }
+.fiche-inf .prix { font-size: 1.7rem; display: block; margin: .6rem 0 1rem; }
+.fiche-inf .note { color: var(--gris); font-size: .9rem; }
+.achat {
+  border: 1px solid var(--ligne); border-radius: var(--radius);
+  padding: 1.2rem; margin: 1.2rem 0; background: var(--fond-doux);
+}
+.achat .ligne-qte { display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem; }
+.qte {
+  display: inline-flex; align-items: center; border: 1.5px solid var(--acier); border-radius: var(--radius); overflow: hidden;
+}
+.qte button {
+  width: 38px; height: 40px; border: none; background: #fff; font-size: 1.2rem; cursor: pointer;
+}
+.qte button:hover { background: var(--fond-doux); }
+.qte span { min-width: 38px; text-align: center; font-weight: 600; }
+.achat .paiement-note { font-size: .82rem; color: var(--gris); margin-top: .7rem; text-align: center; }
+.fiche-reassure { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; font-size: .84rem; margin-top: 1rem; }
+.fiche-reassure span::before { content: "✓ "; color: var(--ok); font-weight: 700; }
+.fiche-inf h2 { font-size: 1.2rem; margin: 1.6rem 0 .5rem; }
+.fiche-inf ul { padding-left: 1.2rem; }
+.fiche-inf li { margin: .3rem 0; }
+
+/* ---------- Drawer panier ---------- */
+aside.drawer {
+  position: fixed; top: 0; right: 0; bottom: 0;
+  width: min(420px, 94vw);
+  background: #fff;
+  z-index: 90;
+  transform: translateX(105%);
+  transition: transform .28s ease;
+  display: flex; flex-direction: column;
+  box-shadow: -12px 0 40px rgba(20,22,26,.2);
+}
+body.drawer-ouvert aside.drawer { transform: none; }
+.drawer header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1.1rem 1.3rem; border-bottom: 1px solid var(--ligne);
+}
+.drawer header h2 { font-size: 1.3rem; }
+.drawer header button { background: none; border: none; font-size: 1.3rem; cursor: pointer; }
+#drawer-body { flex: 1; overflow-y: auto; padding: 1.1rem 1.3rem; }
+#drawer-foot { border-top: 1px solid var(--ligne); padding: 1.1rem 1.3rem; display: grid; gap: .6rem; }
+.d-ligne {
+  display: grid; grid-template-columns: 70px 1fr auto; gap: .9rem;
+  padding: .9rem 0; border-bottom: 1px solid var(--ligne); align-items: center;
+}
+.d-ligne img { border: 1px solid var(--ligne); border-radius: 6px; aspect-ratio: 1; object-fit: contain; padding: .3rem; }
+.d-inf a { font-size: .9rem; font-weight: 600; text-decoration: none; display: block; margin-bottom: .2rem; }
+.d-prix { font-size: .85rem; color: var(--gris); display: block; margin-bottom: .4rem; }
+.d-inf .qte button { height: 30px; width: 30px; font-size: 1rem; }
+.d-inf .qte span { min-width: 28px; font-size: .9rem; }
+.d-suppr { background: none; border: none; color: var(--gris); cursor: pointer; font-size: .95rem; }
+.d-suppr:hover { color: var(--rouge); }
+.d-total { display: flex; justify-content: space-between; font-size: 1.05rem; padding-bottom: .3rem; }
+.d-paiement { font-size: .78rem; color: var(--gris); text-align: center; }
+.cart-vide { text-align: center; color: var(--gris); padding: 2.4rem 0; }
+
+/* ---------- Barre livraison offerte ---------- */
+.ship-bar { margin-bottom: 1.1rem; }
+.ship-bar p { font-size: .85rem; margin-bottom: .4rem; }
+.ship-track {
+  height: 8px; border-radius: 99px; background: var(--ligne); overflow: hidden;
+}
+.ship-track span { display: block; height: 100%; background: var(--rouge); transition: width .3s ease; }
+
+/* ---------- Page panier ---------- */
+.p-table { border-top: 1px solid var(--ligne); }
+.p-ligne {
+  display: grid; grid-template-columns: 84px 1fr auto; gap: 1rem;
+  align-items: center; padding: 1.1rem 0; border-bottom: 1px solid var(--ligne);
+}
+.p-ligne img { border: 1px solid var(--ligne); border-radius: 6px; aspect-ratio: 1; object-fit: contain; padding: .3rem; }
+.p-inf a { font-weight: 600; text-decoration: none; display: block; }
+.p-inf span { font-size: .85rem; color: var(--gris); }
+.p-tot { display: none; }
+@media (min-width: 760px) {
+  .p-ligne { grid-template-columns: 84px 1fr auto auto auto; }
+  .p-tot { display: block; min-width: 90px; text-align: right; }
+}
+.p-recap {
+  max-width: 420px; margin-left: auto; margin-top: 1.6rem;
+  border: 1px solid var(--ligne); border-radius: var(--radius); padding: 1.3rem;
+  display: grid; gap: .6rem; background: var(--fond-doux);
+}
+.p-recap > div { display: flex; justify-content: space-between; font-size: .95rem; }
+.p-grand { font-weight: 700; font-size: 1.1rem !important; border-top: 1px solid var(--ligne); padding-top: .6rem; }
+
+/* ---------- Section paiement (démo) ---------- */
+.paiement-demo {
+  border: 1px dashed var(--acier); border-radius: var(--radius);
+  padding: 1.6rem; margin-top: 2.4rem;
+}
+.paiement-demo .grille { display: grid; gap: .7rem; margin-top: 1rem; }
+@media (min-width: 700px) { .paiement-demo .grille { grid-template-columns: repeat(2, 1fr); } }
+.paiement-demo a {
+  display: flex; justify-content: space-between; align-items: center;
+  border: 1.5px solid var(--ligne); border-radius: var(--radius);
+  padding: .9rem 1.1rem; text-decoration: none; font-weight: 600;
+  background: #fff; transition: var(--transition);
+}
+.paiement-demo a:hover { border-color: var(--encre); }
+.paiement-demo a.crypto { border-color: #f7931a; }
+.paiement-demo small { color: var(--gris); font-weight: 400; }
+
+/* ---------- Pages de contenu ---------- */
+.page-contenu { max-width: 780px; padding: 1.4rem 0 3.4rem; }
+.page-contenu h1 { margin-bottom: 1.4rem; }
+.page-contenu h2 { font-size: 1.25rem; margin: 1.8rem 0 .5rem; }
+.page-contenu p, .page-contenu li { color: var(--acier); }
+.page-contenu ul { padding-left: 1.3rem; margin: .5rem 0; }
+.encart {
+  background: var(--fond-doux); border-left: 3px solid var(--rouge);
+  padding: 1rem 1.2rem; border-radius: 0 var(--radius) var(--radius) 0; margin: 1.2rem 0;
+}
+
+/* ---------- Formulaire contact ---------- */
+form.contact { display: grid; gap: 1rem; margin-top: 1.4rem; }
+form.contact label { font-weight: 600; font-size: .9rem; display: block; margin-bottom: .3rem; }
+form.contact input, form.contact textarea, form.contact select {
+  width: 100%; padding: .8rem 1rem; border: 1.5px solid var(--acier);
+  border-radius: var(--radius); font: inherit;
+}
+@media (min-width: 700px) {
+  form.contact .deux { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+}
+
+</style>
+</head>
+<body data-root="../">
+<p class="annonce">Livraison offerte dès <strong>500 €</strong> · Paiement <strong>crypto accepté</strong> (BTC, ETH, USDT) · Fabriqué dans notre atelier en Isère</p>
+<header class="site">
+  <div class="wrap h-in">
+    <button id="burger" aria-label="Ouvrir le menu"><span></span></button>
+    <a class="logo" href="../index.html"><img src="https://rexatools.com/img/logo-1769762648.jpg" alt="Logo Rexatools" width="44" height="44"><span>Rexatools</span></a>
+    <nav class="principal" aria-label="Catégories">
+      <a href="../categories/colles-collage.html">Colles & collage à froid</a>
+      <a href="../categories/barres-crochets.html">Barres & crochets</a>
+      <a href="../categories/lampes-accessoires.html" aria-current="page">Lampes & accessoires</a>
+      <a href="../pages/contact.html">Contact</a>
+    </nav>
+    <div class="h-actions">
+      <button class="cart-lien" onclick="rexaOpenDrawer()" aria-label="Ouvrir le panier">🛒<span class="cart-count vide">0</span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile" aria-label="Menu mobile">
+  <a href="../index.html">Accueil</a>
+  <a href="../categories/colles-collage.html">Colles & collage à froid</a>
+      <a href="../categories/barres-crochets.html">Barres & crochets</a>
+      <a href="../categories/lampes-accessoires.html" aria-current="page">Lampes & accessoires</a>
+  <a href="../panier.html">Panier</a>
+  <a class="sous" href="../pages/livraison.html">Livraison</a>
+  <a class="sous" href="../pages/retours.html">Retours &amp; remboursements</a>
+  <a class="sous" href="../pages/contact.html">Contact</a>
+</nav>
+<div id="voile"></div>
+<main>
+<div class="wrap ariane"><a href="../index.html">Accueil</a> / <a href="../categories/lampes-accessoires.html">Lampes & accessoires</a> / <strong>Cale d'appui sur roue</strong></div>
+<div class="wrap fiche">
+  <div class="galerie">
+    <img class="principale" src="https://rexatools.com/61-large_default/cale-d-appui-sur-roue.jpg" alt="Cale d'appui sur roue">
+    <div class="minis"><button class="actif" data-img="https://rexatools.com/61-large_default/cale-d-appui-sur-roue.jpg" aria-label="Voir la photo 1"><img src="https://rexatools.com/61-large_default/cale-d-appui-sur-roue.jpg" alt="Cale d'appui sur roue — vue 1" loading="lazy"></button><button class="" data-img="https://rexatools.com/62-large_default/cale-d-appui-sur-roue.jpg" aria-label="Voir la photo 2"><img src="https://rexatools.com/62-large_default/cale-d-appui-sur-roue.jpg" alt="Cale d'appui sur roue — vue 2" loading="lazy"></button></div>
+  </div>
+  <div class="fiche-inf">
+    <span class="eyebrow">Lampes & accessoires</span>
+    <h1>Cale d'appui sur roue</h1>
+    <span class="note"><span class="etoiles">★★★★★</span> 4.9/5 · 13 avis vérifiés</span>
+    <p class="accroche">Un point d'appui stable partout : la cale qui transforme la roue en support de levier.</p>
+    <span class="prix">120,00 €</span>
+    <div class="achat">
+      <div class="ligne-qte">
+        <span style="font-weight:600">Quantité</span>
+        <div class="qte"><button data-qte-moins aria-label="Diminuer">−</button><span id="qte-val">1</span><button data-qte-plus aria-label="Augmenter">+</button></div>
+      </div>
+      <button class="btn btn-plein btn-large" data-add-fiche="cale-d-appui-sur-roue">Ajouter au panier</button>
+      <p class="paiement-note">💳 CB · PayPal · Apple Pay · <strong>₿ Bitcoin · Ξ ETH · ₮ USDT</strong></p>
+    </div>
+    <div class="fiche-reassure">
+      <span>Expédié sous 48 h de l'atelier</span>
+      <span>Livraison offerte dès 500 €</span>
+      <span>Retours 30 jours</span>
+      <span>Fabriqué en France (Isère)</span>
+    </div>
+    <h2>Description</h2>
+    <p>Cale d'appui se positionnant sur la roue du véhicule pour offrir un point de levier stable au travail des ailes et bas de caisse. Fini les appuis improvisés qui glissent ou marquent la carrosserie : la cale répartit la charge sur le pneu et protège les surfaces peintes.</p>
+    <h2>Caractéristiques</h2>
+    <ul><li>Appui stable sur pneu, sans contact avec la jante peinte</li><li>Surface de contact revêtue anti-glisse</li><li>Compatible la plupart des diamètres de roues VL</li><li>Construction acier, fabriquée à l'atelier</li></ul>
+    <h2>À qui s'adresse cet outil ?</h2>
+    <p>Le travail des ailes avant / arrière et des bas de caisse, en atelier comme en intervention mobile.</p>
+  </div>
+</div>
+<div class="regle" role="presentation"></div>
+<section class="doux">
+  <div class="wrap">
+    <div class="sec-tete"><span class="eyebrow">Cross-sell</span><h2>Vous aimerez aussi</h2></div>
+    <div class="prod-grille trois">
+      <article class="prod-carte">
+  
+  <a class="img" href="../produit/adaptateur-rotule-aimantee-lampe-dsp.html"><img src="https://rexatools.com/14-large_default/adaptateur-rotule-aimantee-pour-lampe-dsp-portique.jpg" alt="Adaptateur rotule aimantée pour lampe DSP portique" loading="lazy"></a>
+  <div class="prod-tex">
+    <h3><a href="../produit/adaptateur-rotule-aimantee-lampe-dsp.html">Adaptateur rotule aimantée pour lampe DSP portique</a></h3>
+    <span class="note">★★★★★ 4.6/5 (7 avis)</span>
+    <p class="mini">Votre lampe se pose où vous voulez : rotule orientable + fixation aimantée.</p>
+    <span class="prix">90,00 €</span>
+    <button class="btn btn-plein" onclick="rexaAdd('adaptateur-rotule-aimantee-lampe-dsp')">Ajouter au panier</button>
+  </div>
+</article>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site">
+  <div class="wrap f-grille">
+    <div>
+      <h3>Rexatools</h3>
+      <p>Outils de débosselage sans peinture fabriqués dans notre atelier en Isère. Chaque outil est conçu, forgé et contrôlé par nos soins avant expédition.</p>
+    </div>
+    <div>
+      <h3>Boutique</h3>
+      <a href="../categories/colles-collage.html">Colles & collage à froid</a>
+      <a href="../categories/barres-crochets.html">Barres & crochets</a>
+      <a href="../categories/lampes-accessoires.html">Lampes & accessoires</a>
+      <a href="../panier.html">Panier</a>
+    </div>
+    <div>
+      <h3>Informations</h3>
+      <a href="../pages/livraison.html">Livraison</a>
+      <a href="../pages/retours.html">Retours &amp; remboursements</a>
+      <a href="../pages/cgv.html">CGV</a>
+      <a href="../pages/mentions-legales.html">Mentions légales</a>
+      <a href="../pages/contact.html">Contact</a>
+    </div>
+    <div>
+      <h3>Nous joindre</h3>
+      <p>1 rue Monge, 38320 Eybens<br><a href="tel:+33476010678">04 76 01 06 78</a><br><a href="mailto:contact@rexa.fr">contact@rexa.fr</a><br>Du lundi au vendredi, 8h – 18h</p>
+      <p style="margin-top:.8rem">Paiements : CB · PayPal · Apple&nbsp;Pay · Google&nbsp;Pay · <strong style="color:#ffc46b">₿ Bitcoin · ETH · USDT</strong></p>
+    </div>
+  </div>
+  <div class="wrap f-bas">
+    <span>© 2026 Rexatools — Tous droits réservés.</span>
+    <span>Maquette de préfiguration — aucune commande réelle n'est traitée.</span>
+  </div>
+</footer>
+<aside class="drawer" aria-label="Panier">
+  <header><h2>Votre panier</h2><button onclick="rexaCloseDrawer()" aria-label="Fermer">✕</button></header>
+  <div id="drawer-body"></div>
+  <div id="drawer-foot"></div>
+</aside>
+
+<script>
+// Donnees produits Rexatools (generees depuis products.json)
+window.REXA_DATA = {
+  "boutique": {
+    "nom": "Rexatools",
+    "baseline": "Outils de débosselage sans peinture fabriqués dans notre atelier en Isère",
+    "livraison_offerte_des": 500,
+    "adresse": "1 rue Monge, 38320 Eybens",
+    "telephone": "04 76 01 06 78",
+    "email": "contact@rexa.fr",
+    "horaires": "Du lundi au vendredi, 8h – 18h"
+  },
+  "categories": [
+    {
+      "id": "colles-collage",
+      "nom": "Colles & collage à froid",
+      "accroche": "Débosselage par collage : colles Pillon, pads de traction et marteaux à inertie pour intervenir sans démontage.",
+      "image": "https://rexatools.com/938-large_default/marteau-a-inertie-colle-froide.jpg"
+    },
+    {
+      "id": "barres-crochets",
+      "nom": "Barres & crochets",
+      "accroche": "Barres forgées et testées à l'atelier : accès pavillon, portes, ailes et zones sous-traverse.",
+      "image": "https://rexatools.com/235-large_default/barre-extensible-pavillon.jpg"
+    },
+    {
+      "id": "lampes-accessoires",
+      "nom": "Lampes & accessoires",
+      "accroche": "Lecture de la tôle et confort de travail : éclairage DSP, fixations aimantées et cales d'appui.",
+      "image": "https://rexatools.com/61-large_default/cale-d-appui-sur-roue.jpg"
+    }
+  ],
+  "produits": [
+    {
+      "id": "marteau-a-inertie-colle-froide",
+      "categorie": "colles-collage",
+      "nom": "Marteau à inertie colle froide",
+      "prix": 180,
+      "accroche": "Tirez les impacts sans démonter : la traction contrôlée pour le collage à froid.",
+      "description": "Marteau à inertie conçu pour le débosselage par collage à froid. La masse coulissante délivre une traction progressive et contrôlée sur le pad collé, idéale pour remonter les impacts sur les zones inaccessibles par l'arrière (doublures, longerons, bas de caisse).",
+      "caracteristiques": [
+        "Compatible pads de traction standard",
+        "Masse coulissante équilibrée pour une traction progressive",
+        "Poignée antidérapante",
+        "Conçu et assemblé dans notre atelier d'Eybens (Isère)"
+      ],
+      "pour_qui": "Débosseleurs pros travaillant au collage, carrossiers souhaitant intervenir sans démontage, amateurs avancés équipés en colle froide.",
+      "images": [
+        "https://rexatools.com/938-large_default/marteau-a-inertie-colle-froide.jpg",
+        "https://rexatools.com/939-large_default/marteau-a-inertie-colle-froide.jpg"
+      ],
+      "note": 4.8,
+      "nb_avis": 17,
+      "best_seller": true
+    },
+    {
+      "id": "pack-3-colles-froides-pillon",
+      "categorie": "colles-collage",
+      "nom": "Pack 3 colles froides Pillon",
+      "prix": 140,
+      "accroche": "Les 3 duretés en un pack : une adhérence adaptée à chaque tôle et chaque saison.",
+      "description": "Pack complet des trois colles froides Pillon (bleue, or, rouge). Chaque dureté répond à un besoin : forte adhérence pour les grosses tractions, adhérence intermédiaire pour le travail courant, décollage facile pour les tôles fines ou repeintes. Le trio couvre l'ensemble des situations en atelier comme en intervention mobile.",
+      "caracteristiques": [
+        "3 duretés complémentaires (bleue / or / rouge)",
+        "Application à froid, sans pistolet à colle",
+        "Retrait propre, sans résidu agressif pour la peinture",
+        "Économie de 10 € par rapport à l'achat séparé"
+      ],
+      "pour_qui": "Tous les praticiens du collage à froid qui veulent couvrir 100 % des cas de figure avec un seul pack.",
+      "images": [
+        "https://rexatools.com/936-large_default/pack-3-colles-froides-pillon.jpg",
+        "https://rexatools.com/937-large_default/pack-3-colles-froides-pillon.jpg"
+      ],
+      "note": 4.9,
+      "nb_avis": 23,
+      "best_seller": true
+    },
+    {
+      "id": "colle-froide-pillon-or",
+      "categorie": "colles-collage",
+      "nom": "Colle froide Pillon Or",
+      "prix": 50,
+      "accroche": "La polyvalente : l'adhérence intermédiaire qui couvre le travail du quotidien.",
+      "description": "Colle froide Pillon Or, dureté intermédiaire. C'est la référence à tout faire du débosselage par collage : assez d'adhérence pour la majorité des tractions, un décollage maîtrisé qui préserve la peinture. Si vous ne deviez en garder qu'une, ce serait celle-ci.",
+      "caracteristiques": [
+        "Dureté intermédiaire polyvalente",
+        "Application à froid, prête à l'emploi",
+        "Compatible tous pads de traction",
+        "Tenue stable de 10 °C à 30 °C"
+      ],
+      "pour_qui": "Le praticien qui veut une colle fiable pour le travail courant, sans jongler entre les références.",
+      "images": [
+        "https://rexatools.com/857-large_default/colle-froide-pillon-or.jpg",
+        "https://rexatools.com/858-large_default/colle-froide-pillon-or.jpg"
+      ],
+      "note": 4.7,
+      "nb_avis": 12,
+      "best_seller": false
+    },
+    {
+      "id": "kit-pads-de-traction-dsp",
+      "categorie": "colles-collage",
+      "nom": "Kit pads de traction DSP",
+      "prix": 50,
+      "accroche": "Le bon pad pour chaque impact : du petit grêlon à la grosse déformation.",
+      "description": "Assortiment de pads de traction DSP couvrant les principaux diamètres et profils. Un pad adapté à la taille de l'impact, c'est une traction centrée, une tôle qui remonte droit et une finition plus rapide. Compatible marteaux à inertie et ponts de traction.",
+      "caracteristiques": [
+        "Plusieurs diamètres et profils dans un seul kit",
+        "Compatible colle froide et colle chaude",
+        "Surface de collage optimisée pour une traction centrée",
+        "Matériau résistant à l'arrachement"
+      ],
+      "pour_qui": "Complément indispensable de tout équipement de collage, du kit débutant au poste pro.",
+      "images": [
+        "https://rexatools.com/723-large_default/kit-pads-de-traction-dsp.jpg",
+        "https://rexatools.com/724-large_default/kit-pads-de-traction-dsp.jpg"
+      ],
+      "note": 4.6,
+      "nb_avis": 9,
+      "best_seller": false
+    },
+    {
+      "id": "barre-extensible-pavillon",
+      "categorie": "barres-crochets",
+      "nom": "Barre extensible pavillon",
+      "prix": 220,
+      "accroche": "Le pavillon sans dépose de ciel de toit : la portée réglable qui va chercher l'impact au centre.",
+      "description": "Barre extensible dédiée au travail du pavillon. Sa longueur réglable permet d'atteindre le centre du toit par les ouvertures existantes, sans déposer le ciel de toit. La rigidité de la barre garantit un appui précis même en extension maximale — là où les barres fixes fléchissent.",
+      "caracteristiques": [
+        "Longueur réglable, verrouillage ferme à chaque position",
+        "Rigidité conservée en extension maximale",
+        "Embouts interchangeables",
+        "Forgée et contrôlée dans notre atelier"
+      ],
+      "pour_qui": "Débosseleurs confrontés à la grêle et aux impacts de pavillon, sans vouloir déposer les garnitures.",
+      "images": [
+        "https://rexatools.com/235-large_default/barre-extensible-pavillon.jpg",
+        "https://rexatools.com/236-large_default/barre-extensible-pavillon.jpg"
+      ],
+      "note": 4.9,
+      "nb_avis": 14,
+      "best_seller": true
+    },
+    {
+      "id": "barre-crochet-48cm-x-11cm-o8",
+      "categorie": "barres-crochets",
+      "nom": "Barre crochet 48 cm × 11 cm Ø8",
+      "prix": 40,
+      "accroche": "Le crochet 48 cm qui contourne les renforts et travaille derrière l'obstacle.",
+      "description": "Barre crochet de 48 cm avec déport de 11 cm en Ø8. Le déport important permet de contourner les renforts de porte et les doublures pour venir pousser exactement sous l'impact. L'acier Ø8 offre le compromis rigidité / retour élastique adapté aux tractions moyennes.",
+      "caracteristiques": [
+        "Longueur 48 cm, crochet 11 cm, acier Ø8",
+        "Déport étudié pour les renforts de portes",
+        "Pointe polie, ne marque pas la tôle",
+        "Acier ressort sélectionné, forgé à l'atelier"
+      ],
+      "pour_qui": "Le travail des portes et panneaux avec renforts, en complément d'un jeu de barres droites.",
+      "images": [
+        "https://rexatools.com/908-large_default/barre-crochet-48cm-x-11cm-o8.jpg",
+        "https://rexatools.com/909-large_default/barre-crochet-48cm-x-11cm-o8.jpg"
+      ],
+      "note": 4.8,
+      "nb_avis": 11,
+      "best_seller": false
+    },
+    {
+      "id": "barre-aluminium-bombee-droite-l45-o8",
+      "categorie": "barres-crochets",
+      "nom": "Barre aluminium bombée droite L45 Ø8",
+      "prix": 45,
+      "accroche": "Pensée pour les carrosseries aluminium : la pression juste, sans sur-étirer la tôle.",
+      "description": "Barre bombée droite de 45 cm en Ø8, de la série dédiée aux éléments aluminium. L'aluminium ne réagit pas comme l'acier : il marque plus vite et ne revient pas. Cette barre est calibrée pour appliquer une pression progressive qui remonte la tôle sans l'étirer.",
+      "caracteristiques": [
+        "Longueur 45 cm, Ø8, profil bombé droite",
+        "Série spéciale carrosseries aluminium",
+        "Pression progressive, limite le risque de sur-étirement",
+        "Numérotée 4/8 dans la série — se complète barre par barre"
+      ],
+      "pour_qui": "Débosseleurs intervenant sur véhicules récents à éléments aluminium (capots, ailes, portes).",
+      "images": [
+        "https://rexatools.com/748-large_default/barre-aluminium-bombee-droite-l45-o8-4-8.jpg",
+        "https://rexatools.com/749-large_default/barre-aluminium-bombee-droite-l45-o8-4-8.jpg"
+      ],
+      "note": 4.7,
+      "nb_avis": 8,
+      "best_seller": false
+    },
+    {
+      "id": "barre-diams-71xo8",
+      "categorie": "barres-crochets",
+      "nom": "Barre Diams 71 × Ø8",
+      "prix": 66,
+      "accroche": "La grande longueur de la série Diams : 71 cm pour aller loin sous les panneaux.",
+      "description": "Barre Diams de 71 cm en Ø8, la plus longue de la série. Sa longueur permet de traverser les doublures et d'atteindre les impacts profonds sur ailes arrière et panneaux latéraux, tout en gardant un contrôle fin de la pointe grâce à l'équilibre de l'acier.",
+      "caracteristiques": [
+        "Longueur 71 cm, acier Ø8",
+        "Portée maximale de la série Diams",
+        "Contrôle de pointe précis malgré la longueur",
+        "Acier ressort forgé et contrôlé à l'atelier"
+      ],
+      "pour_qui": "Le travail en profondeur : ailes arrière, panneaux latéraux, zones à accès éloigné.",
+      "images": [
+        "https://rexatools.com/298-large_default/barre-diams-71xo8.jpg",
+        "https://rexatools.com/299-large_default/barre-diams-71xo8.jpg"
+      ],
+      "note": 4.8,
+      "nb_avis": 10,
+      "best_seller": false
+    },
+    {
+      "id": "adaptateur-rotule-aimantee-lampe-dsp",
+      "categorie": "lampes-accessoires",
+      "nom": "Adaptateur rotule aimantée pour lampe DSP portique",
+      "prix": 90,
+      "accroche": "Votre lampe se pose où vous voulez : rotule orientable + fixation aimantée.",
+      "description": "Adaptateur rotule aimantée (modèle 2) pour lampe DSP portique. L'aimant puissant fixe la lampe directement sur l'élément de carrosserie ou le portique, la rotule oriente le faisceau au degré près. Une bonne lecture des lignes de lampe, c'est 80 % du diagnostic — cet adaptateur la rend possible sur n'importe quelle zone.",
+      "caracteristiques": [
+        "Rotule orientable à friction réglable",
+        "Base aimantée puissante, revêtement anti-rayure",
+        "Compatible lampes DSP portique standard",
+        "Montage et démontage en quelques secondes"
+      ],
+      "pour_qui": "Tous les utilisateurs de lampe DSP qui veulent un positionnement rapide et stable, en atelier comme en mobile.",
+      "images": [
+        "https://rexatools.com/14-large_default/adaptateur-rotule-aimantee-pour-lampe-dsp-portique.jpg",
+        "https://rexatools.com/15-large_default/adaptateur-rotule-aimantee-pour-lampe-dsp-portique.jpg"
+      ],
+      "note": 4.6,
+      "nb_avis": 7,
+      "best_seller": false
+    },
+    {
+      "id": "cale-d-appui-sur-roue",
+      "categorie": "lampes-accessoires",
+      "nom": "Cale d'appui sur roue",
+      "prix": 120,
+      "accroche": "Un point d'appui stable partout : la cale qui transforme la roue en support de levier.",
+      "description": "Cale d'appui se positionnant sur la roue du véhicule pour offrir un point de levier stable au travail des ailes et bas de caisse. Fini les appuis improvisés qui glissent ou marquent la carrosserie : la cale répartit la charge sur le pneu et protège les surfaces peintes.",
+      "caracteristiques": [
+        "Appui stable sur pneu, sans contact avec la jante peinte",
+        "Surface de contact revêtue anti-glisse",
+        "Compatible la plupart des diamètres de roues VL",
+        "Construction acier, fabriquée à l'atelier"
+      ],
+      "pour_qui": "Le travail des ailes avant / arrière et des bas de caisse, en atelier comme en intervention mobile.",
+      "images": [
+        "https://rexatools.com/61-large_default/cale-d-appui-sur-roue.jpg",
+        "https://rexatools.com/62-large_default/cale-d-appui-sur-roue.jpg"
+      ],
+      "note": 4.9,
+      "nb_avis": 13,
+      "best_seller": true
+    }
+  ]
+};
+
+/* Rexatools — panier (localStorage) + drawer + burger + interactions */
+(function () {
+  'use strict';
+  var DATA = window.REXA_DATA || { produits: [], boutique: { livraison_offerte_des: 500 } };
+  var SEUIL = DATA.boutique.livraison_offerte_des || 500;
+  var KEY = 'rexa_cart_v1';
+  var ROOT = document.body.getAttribute('data-root') || '';
+
+  function produit(id) {
+    for (var i = 0; i < DATA.produits.length; i++) if (DATA.produits[i].id === id) return DATA.produits[i];
+    return null;
+  }
+  function lireCart() {
+    try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch (e) { return []; }
+  }
+  function ecrireCart(c) { localStorage.setItem(KEY, JSON.stringify(c)); majUI(); }
+  function totalQte(c) { return c.reduce(function (s, l) { return s + l.qty; }, 0); }
+  function sousTotal(c) {
+    return c.reduce(function (s, l) { var p = produit(l.id); return p ? s + p.prix * l.qty : s; }, 0);
+  }
+  function eur(n) { return n.toLocaleString('fr-FR', { minimumFractionDigits: 2 }) + ' €'; }
+
+  window.rexaAdd = function (id, qty) {
+    qty = qty || 1;
+    var c = lireCart();
+    var l = c.find(function (x) { return x.id === id; });
+    if (l) l.qty += qty; else c.push({ id: id, qty: qty });
+    ecrireCart(c);
+    ouvrirDrawer();
+  };
+  window.rexaSetQty = function (id, qty) {
+    var c = lireCart();
+    var l = c.find(function (x) { return x.id === id; });
+    if (!l) return;
+    l.qty = qty;
+    if (l.qty <= 0) c = c.filter(function (x) { return x.id !== id; });
+    ecrireCart(c);
+  };
+  window.rexaRemove = function (id) {
+    ecrireCart(lireCart().filter(function (x) { return x.id !== id; }));
+  };
+
+  /* ---- barre livraison offerte ---- */
+  function barreLivraison(st) {
+    var reste = SEUIL - st;
+    var pct = Math.min(100, Math.round(st / SEUIL * 100));
+    var txt = reste > 0
+      ? 'Plus que <strong>' + eur(reste) + '</strong> pour la livraison offerte'
+      : '<strong>Livraison offerte</strong> sur votre commande 🎉';
+    return '<div class="ship-bar"><p>' + txt + '</p><div class="ship-track"><span style="width:' + pct + '%"></span></div></div>';
+  }
+
+  /* ---- drawer ---- */
+  function rendreDrawer() {
+    var c = lireCart();
+    var corps = document.getElementById('drawer-body');
+    var pied = document.getElementById('drawer-foot');
+    if (!corps) return;
+    if (!c.length) {
+      corps.innerHTML = '<p class="cart-vide">Votre panier est vide.<br>Nos outils n\u2019attendent que vous.</p>';
+      pied.innerHTML = '<a class="btn btn-plein" href="' + ROOT + 'index.html#categories">Voir les cat\u00e9gories</a>';
+      return;
+    }
+    var st = sousTotal(c);
+    var html = barreLivraison(st);
+    c.forEach(function (l) {
+      var p = produit(l.id); if (!p) return;
+      html += '<div class="d-ligne">' +
+        '<img src="' + p.images[0] + '" alt="' + p.nom + '" loading="lazy">' +
+        '<div class="d-inf"><a href="' + ROOT + 'produit/' + p.id + '.html">' + p.nom + '</a>' +
+        '<span class="d-prix">' + eur(p.prix) + '</span>' +
+        '<div class="qte"><button aria-label="Diminuer" onclick="rexaSetQty(\'' + p.id + '\',' + (l.qty - 1) + ')">−</button>' +
+        '<span>' + l.qty + '</span>' +
+        '<button aria-label="Augmenter" onclick="rexaSetQty(\'' + p.id + '\',' + (l.qty + 1) + ')">+</button></div></div>' +
+        '<button class="d-suppr" aria-label="Retirer" onclick="rexaRemove(\'' + p.id + '\')">✕</button></div>';
+    });
+    corps.innerHTML = html;
+    pied.innerHTML = '<div class="d-total"><span>Sous-total</span><strong>' + eur(st) + '</strong></div>' +
+      '<a class="btn btn-ligne" href="' + ROOT + 'panier.html">Voir le panier</a>' +
+      '<a class="btn btn-plein" href="' + ROOT + 'panier.html#paiement">Passer la commande</a>' +
+      '<p class="d-paiement">CB · PayPal · Apple Pay · <strong>Bitcoin / ETH / USDT</strong></p>';
+  }
+  function ouvrirDrawer() {
+    document.body.classList.add('drawer-ouvert');
+    rendreDrawer();
+  }
+  window.rexaOpenDrawer = ouvrirDrawer;
+  window.rexaCloseDrawer = function () { document.body.classList.remove('drawer-ouvert'); };
+
+  /* ---- page panier ---- */
+  function rendrePagePanier() {
+    var zone = document.getElementById('page-panier');
+    if (!zone) return;
+    var c = lireCart();
+    if (!c.length) {
+      zone.innerHTML = '<p class="cart-vide">Votre panier est vide.</p><p style="text-align:center"><a class="btn btn-plein" href="index.html#categories">D\u00e9couvrir nos outils</a></p>';
+      return;
+    }
+    var st = sousTotal(c);
+    var html = barreLivraison(st) + '<div class="p-table">';
+    c.forEach(function (l) {
+      var p = produit(l.id); if (!p) return;
+      html += '<div class="p-ligne">' +
+        '<img src="' + p.images[0] + '" alt="' + p.nom + '" loading="lazy">' +
+        '<div class="p-inf"><a href="produit/' + p.id + '.html">' + p.nom + '</a><span>' + eur(p.prix) + ' / unit\u00e9</span></div>' +
+        '<div class="qte"><button aria-label="Diminuer" onclick="rexaSetQty(\'' + p.id + '\',' + (l.qty - 1) + ')">−</button>' +
+        '<span>' + l.qty + '</span>' +
+        '<button aria-label="Augmenter" onclick="rexaSetQty(\'' + p.id + '\',' + (l.qty + 1) + ')">+</button></div>' +
+        '<strong class="p-tot">' + eur(p.prix * l.qty) + '</strong>' +
+        '<button class="d-suppr" aria-label="Retirer" onclick="rexaRemove(\'' + p.id + '\')">✕</button></div>';
+    });
+    var livraison = st >= SEUIL ? 0 : 15;
+    html += '</div><div class="p-recap">' +
+      '<div><span>Sous-total</span><span>' + eur(st) + '</span></div>' +
+      '<div><span>Livraison estim\u00e9e</span><span>' + (livraison ? eur(livraison) : 'Offerte') + '</span></div>' +
+      '<div class="p-grand"><span>Total</span><span>' + eur(st + livraison) + '</span></div>' +
+      '<a class="btn btn-plein" href="#paiement">Passer la commande</a></div>';
+    zone.innerHTML = html;
+  }
+
+  /* ---- compteur + init ---- */
+  function majUI() {
+    var n = totalQte(lireCart());
+    document.querySelectorAll('.cart-count').forEach(function (el) {
+      el.textContent = n;
+      el.classList.toggle('vide', n === 0);
+    });
+    rendreDrawer();
+    rendrePagePanier();
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    majUI();
+    var burger = document.getElementById('burger');
+    if (burger) burger.addEventListener('click', function () { document.body.classList.toggle('menu-ouvert'); });
+    var voile = document.getElementById('voile');
+    if (voile) voile.addEventListener('click', function () {
+      document.body.classList.remove('drawer-ouvert', 'menu-ouvert');
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') document.body.classList.remove('drawer-ouvert', 'menu-ouvert');
+    });
+    /* fiche produit : galerie */
+    document.querySelectorAll('.minis button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var img = document.querySelector('.galerie .principale');
+        if (img) img.src = b.getAttribute('data-img');
+        document.querySelectorAll('.minis button').forEach(function (x) { x.classList.remove('actif'); });
+        b.classList.add('actif');
+      });
+    });
+    /* fiche produit : quantité + ajout */
+    var qv = document.getElementById('qte-val');
+    var moins = document.querySelector('[data-qte-moins]');
+    var plus = document.querySelector('[data-qte-plus]');
+    if (moins) moins.addEventListener('click', function () {
+      qv.textContent = Math.max(1, parseInt(qv.textContent, 10) - 1);
+    });
+    if (plus) plus.addEventListener('click', function () {
+      qv.textContent = parseInt(qv.textContent, 10) + 1;
+    });
+    var addFiche = document.querySelector('[data-add-fiche]');
+    if (addFiche) addFiche.addEventListener('click', function () {
+      window.rexaAdd(addFiche.getAttribute('data-add-fiche'), parseInt(qv.textContent, 10));
+    });
+    /* démo paiement : aucun paiement réel */
+    document.querySelectorAll('[data-demo-pay]').forEach(function (b) {
+      b.addEventListener('click', function (e) {
+        e.preventDefault();
+        alert('Maquette de d\u00e9monstration : aucun paiement n\u2019est d\u00e9clench\u00e9.');
+      });
+    });
+  });
+})();
+
+</script>
+</body>
+</html>
